@@ -18,12 +18,12 @@ from types import MethodType
 
 # Configuration parameters
 CONFIG = {
-    'dataset_name': 'Vaihingen',          # Dataset name
-    'test_files': 'val.txt',             # File list
+    'dataset_name': 'xian',          # Dataset name
+    'test_files': 'test.txt',             # File list
     'base_dir': 'logs',                   # Base directory
     'log_file': 'test_results.log',       # Log file name
     'device': torch.device("cuda" if torch.cuda.is_available() else "cpu"),  # Device selection
-    'num_classes': 5,                      # Number of classes, 0: background, 1-6: foreground classes
+    'num_classes': 2,                      # Number of classes, 0: background, 1-6: foreground classes
     'ignore_index': 255,                   # Ignored class index
     'save_prefix': 'best_model',           # Prefix for weight file names
 
