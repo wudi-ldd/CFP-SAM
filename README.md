@@ -23,7 +23,17 @@ CFP-SAM/
 ├── train.py             # Main training loop (entry point)
 └── README.md            # This document
 ```
-
+## Prerequisites
+**Clone and install SAM 2**  
+   ```bash
+   git clone https://github.com/facebookresearch/sam2.git
+   cd sam2
+   pip install -e .                              # Install the SAM 2 package
+```
+**Download SAM 2 checkpoints**  
+   - Place `sam2.1_hiera_large.pt` (and other desired variants) in `weights/`  
+   - Ensure `sam2/configs/sam2.1/` contains the corresponding YAML files
+   
 ## Installation
 
 ```bash
@@ -31,7 +41,6 @@ git clone https://github.com/xxx/CFP-SAM.git
 cd CFP-SAM
 conda create -n CFP-SAM python==3.8.16
 conda activate CFP-SAM
-pip install -r requirements.txt
 ```
 
 **Requirements**  
