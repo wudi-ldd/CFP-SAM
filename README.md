@@ -164,8 +164,6 @@ Evaluate a specific run:
 python eval.py --run_name <run_name> --test_list test.txt
 ```
 
-The reported results are computed without test-time augmentation.
-
 Available arguments:
 
 ```text
