@@ -214,4 +214,4 @@ Use the foreground class line in the evaluation output for binary datasets.
 
 ## License
 
-Please add a license before public release.
+This project is released under the MIT License. See the [LICENSE](LICENSE) file for details.
