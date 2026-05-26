@@ -43,11 +43,6 @@ pip install torch torchvision
 pip install numpy opencv-python pillow tqdm safetensors hydra-core omegaconf
 ```
 
-Optional dependency for test-time augmentation:
-
-```bash
-pip install ttach
-```
 
 ## SAM2 Checkpoint
 
@@ -166,21 +161,16 @@ The `_LDP` suffix is used when the low-frequency perturbation module is enabled.
 Evaluate a specific run:
 
 ```bash
-python eval.py --run_name <run_name> --test_list test.txt --tta_mode none
+python eval.py --run_name <run_name> --test_list test.txt
 ```
 
-Optional test-time augmentation:
-
-```bash
-python eval.py --run_name <run_name> --test_list test.txt --tta_mode lr
-```
+The reported results are computed without test-time augmentation.
 
 Available arguments:
 
 ```text
 --run_name     training run directory under logs/
 --test_list    split file, e.g., test.txt
---tta_mode     none, lr, or d4
 --use_amp      enable AMP during evaluation
 ```
 
